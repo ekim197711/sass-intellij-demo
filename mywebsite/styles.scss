@@ -1,0 +1,42 @@
+@use "sass:list";
+
+$mycolors: darkblue, orange, darkcyan, darkorange;
+
+* {
+  margin: 0;
+}
+
+@each $mycolor in $mycolors {
+  .myclass-#{$mycolor} {
+    background: $mycolor;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+}
+
+.mygrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 20vh 80vh;
+  background: yellow;
+  color: white;
+}
+
+.top {
+  grid-column-end: 4;
+  grid-column-start: 1;
+  background: list.nth($mycolors, 1);
+}
+
+.left {
+  background: list.nth($mycolors, 2);
+}
+
+.middle {
+  background: list.nth($mycolors, 3);
+}
+
+.right {
+  background: list.nth($mycolors, 4);
+}
+

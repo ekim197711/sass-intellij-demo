@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+.myclass-darkblue {
+  background: darkblue;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.myclass-orange {
+  background: orange;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.myclass-darkcyan {
+  background: darkcyan;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.myclass-darkorange {
+  background: darkorange;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.mygrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 20vh 80vh;
+  background: yellow;
+  color: white;
+}
+
+.top {
+  grid-column-end: 4;
+  grid-column-start: 1;
+  background: darkblue;
+}
+
+.left {
+  background: orange;
+}
+
+.middle {
+  background: darkcyan;
+}
+
+.right {
+  background: darkorange;
+}
+
+/*# sourceMappingURL=styles.css.map */
