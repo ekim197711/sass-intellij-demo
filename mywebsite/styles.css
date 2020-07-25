@@ -2,8 +2,8 @@
   margin: 0;
 }
 
-.myclass-darkblue {
-  background: darkblue;
+.myclass-brown {
+  background: brown;
   font-weight: bolder;
   font-size: 2rem;
 }
@@ -37,11 +37,20 @@
 .top {
   grid-column-end: 4;
   grid-column-start: 1;
-  background: darkblue;
+  background: brown;
+}
+.top:hover {
+  background: white;
+  color: black;
 }
 
 .left {
   background: orange;
+}
+.left li {
+  color: black;
+  font-size: 1.5rem;
+  list-style: none;
 }
 
 .middle {

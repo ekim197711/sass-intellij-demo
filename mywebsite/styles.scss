@@ -1,10 +1,11 @@
 @use "sass:list";
-
-$mycolors: darkblue, orange, darkcyan, darkorange;
+@import "configuration";
 
 * {
   margin: 0;
 }
+
+
 
 @each $mycolor in $mycolors {
   .myclass-#{$mycolor} {
@@ -13,6 +14,8 @@ $mycolors: darkblue, orange, darkcyan, darkorange;
     font-size: 2rem;
   }
 }
+@debug list.nth($mycolors, 2);
+@debug "Hi my name is Mike";
 
 .mygrid {
   display: grid;
@@ -26,10 +29,19 @@ $mycolors: darkblue, orange, darkcyan, darkorange;
   grid-column-end: 4;
   grid-column-start: 1;
   background: list.nth($mycolors, 1);
+  &:hover{
+    background: white;
+    color: black;
+  }
 }
 
 .left {
   background: list.nth($mycolors, 2);
+  li {
+    color: black;
+    font-size: 1.5rem;
+    list-style: none;
+  }
 }
 
 .middle {
